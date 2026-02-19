@@ -1,0 +1,61 @@
+Template: feature_development
+Env: local
+
+REQUIREMENTS:
+Goal: Build a personal GitHub Pages website (Ryanshuai.github.io) to showcase CV/3D Vision work.
+Tech: Pure static HTML + CSS + JS. No frameworks. Must work directly with GitHub Pages.
+Language: English
+
+Content Boundaries (IMPORTANT):
+- Company work: describe at GENERAL technical level only (e.g., "vehicle tracking pipeline using detection + tracking + OCR + ReID")
+- Do NOT include specific company tricks, internal data, proprietary numbers, or architecture details
+- Open source projects: can be described in full detail with GitHub links
+- Use placeholder images for now (colored blocks with text labels). User will add real images/videos later.
+- Technical explanation diagrams can be described/planned but use placeholders for now.
+
+Website Structure (single-page scrolling):
+1. Hero Section — Name "Shuai Yan", title "Computer Vision & 3D Vision Engineer", contact links (email, LinkedIn, GitHub)
+2. About — Brief professional summary (tech lead at $5B AI company, 1100+ sites, 2D+3D vision)
+3. Projects — Card grid layout, each card: placeholder image + title + short description + tech tags + link
+   Projects to include:
+   a. Vehicle Perception System — Detection, Tracking, OCR, ReID pipeline (general description, no company specifics)
+   b. 3D Digital Twin Pipeline — SfM, Gaussian Splatting, Unreal Engine synthetic data (general description)
+   c. 3D Gaussian Splatting CuPy Implementation [open source] — link to github.com/Ryanshuai
+   d. Incremental SfM Pipeline [open source] — link to github.com/Ryanshuai
+   e. Deep Learning Framework from Scratch [open source] — link to github.com/Ryanshuai
+   f. BM3D Python Implementation [open source, 256 stars] — link to github.com/Ryanshuai
+   g. CNN Vanishing Point Detection [research] — link to publication
+4. Experience Timeline — work history (Metropolis, MINIEYE, Meitu, SenseTime internship, UCSB visiting scholar, CAS research)
+5. Skills Section — tag/badge style grouping: Languages, ML/CV Frameworks, GPU Computing, Specializations, 3D Tools, Edge
+6. Education — MS UC Riverside, ME CAS, BS UESTC
+7. Footer — contact info, copyright
+
+Design:
+- Modern, clean, dark theme (dark background, light text, accent color)
+- Responsive (mobile + desktop)
+- Smooth scroll navigation
+- Cards with hover effects
+- Timeline for experience section
+- Tech skill tags with category grouping
+
+Features (feature_list.json order):
+1. Basic HTML structure with all 7 sections
+2. CSS styling - dark theme, responsive layout
+3. Navigation bar with smooth scroll
+4. Hero section with name, title, contact links
+5. About section
+6. Projects card grid with placeholder images and hover effects
+7. Experience timeline
+8. Skills tags section
+9. Education section
+10. Footer
+11. Mobile responsive adjustments
+12. Smooth animations on scroll (optional, CSS-only)
+
+init.sh: Open index.html in default browser for testing.
+
+== 2025-02-19 ==
+Done: Initial setup — created task directory, git init, wrote requirements
+State: Ready to start building
+Next: Create feature_list.json, init.sh, then start implementing HTML/CSS/JS
+Codebase: none
