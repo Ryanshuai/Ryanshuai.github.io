@@ -62,6 +62,8 @@
 html {
     font-size: 16px;
     line-height: 1.6;
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--nav-height);
 }
 
 body {
@@ -113,11 +115,17 @@ ul {
    Navigation Bar
    ======================================== */
 #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
     background-color: var(--bg-secondary);
     border-bottom: 1px solid var(--border-color);
     height: var(--nav-height);
     width: 100%;
     z-index: 100;
+    transition: all var(--transition-normal);
+    backdrop-filter: blur(10px);
+    background-color: rgba(26, 26, 26, 0.95);
 }
 
 .nav-container {
@@ -161,17 +169,23 @@ ul {
     background-color: var(--bg-hover);
 }
 
+.nav-link.active {
+    color: var(--accent-primary);
+    background-color: var(--bg-hover);
+}
+
 /* ========================================
    Hero Section
    ======================================== */
 .hero-section {
-    min-height: calc(100vh - var(--nav-height));
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
     text-align: center;
     padding: var(--spacing-xxl) var(--spacing-lg);
+    padding-top: calc(var(--nav-height) + var(--spacing-xxl));
 }
 
 .hero-container {

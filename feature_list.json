@@ -21,8 +21,8 @@
       "name": "Navigation bar with smooth scroll",
       "description": "Create fixed/sticky navigation bar with links to all sections and smooth scrolling behavior",
       "priority": 1,
-      "status": "incomplete",
-      "passes": false
+      "status": "complete",
+      "passes": true
     },
     {
       "id": 4,
