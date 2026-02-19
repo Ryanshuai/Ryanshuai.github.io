@@ -85,8 +85,8 @@
       "name": "Mobile responsive adjustments",
       "description": "Implement responsive design with media queries to ensure proper layout on mobile devices (stacked cards, adjusted navigation, readable text sizes)",
       "priority": 2,
-      "status": "incomplete",
-      "passes": false
+      "status": "complete",
+      "passes": true
     },
     {
       "id": 12,
