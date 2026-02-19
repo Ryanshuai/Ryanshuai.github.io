@@ -29,8 +29,8 @@
       "name": "Hero section with name, title, contact links",
       "description": "Implement hero section displaying 'Shuai Yan', 'Computer Vision & 3D Vision Engineer', with email, LinkedIn, and GitHub links",
       "priority": 1,
-      "status": "incomplete",
-      "passes": false
+      "status": "complete",
+      "passes": true
     },
     {
       "id": 5,
