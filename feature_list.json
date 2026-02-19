@@ -77,8 +77,8 @@
       "name": "Footer",
       "description": "Create footer with contact information and copyright notice",
       "priority": 1,
-      "status": "incomplete",
-      "passes": false
+      "status": "complete",
+      "passes": true
     },
     {
       "id": 11,
