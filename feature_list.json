@@ -69,8 +69,8 @@
       "name": "Education section",
       "description": "Add Education section displaying: MS UC Riverside, ME CAS, BS UESTC with relevant details",
       "priority": 1,
-      "status": "incomplete",
-      "passes": false
+      "status": "complete",
+      "passes": true
     },
     {
       "id": 10,
