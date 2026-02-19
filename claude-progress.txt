@@ -59,3 +59,9 @@ Done: Initial setup — created task directory, git init, wrote requirements
 State: Ready to start building
 Next: Create feature_list.json, init.sh, then start implementing HTML/CSS/JS
 Codebase: none
+
+== 2026-02-19 15:20 ==
+Done: Created feature_list.json (12 features) and init.sh (browser launcher for Windows/MINGW64)
+State: Project structure ready. All 12 features marked incomplete. No code files yet.
+Next: Implement feature #1 (Basic HTML structure with all 7 sections)
+Codebase: feature_list.json, init.sh created
