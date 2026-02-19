@@ -61,8 +61,8 @@
       "name": "Skills tags section",
       "description": "Create categorized skill tags/badges grouped by: Languages, ML/CV Frameworks, GPU Computing, Specializations, 3D Tools, Edge Computing",
       "priority": 1,
-      "status": "incomplete",
-      "passes": false
+      "status": "complete",
+      "passes": true
     },
     {
       "id": 9,
