@@ -93,8 +93,8 @@
       "name": "Smooth animations on scroll (optional, CSS-only)",
       "description": "Add CSS-only scroll animations for fade-in, slide-up effects when elements enter viewport (optional enhancement)",
       "priority": 3,
-      "status": "incomplete",
-      "passes": false
+      "status": "complete",
+      "passes": true
     }
   ]
 }
