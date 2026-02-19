@@ -53,8 +53,8 @@
       "name": "Experience timeline",
       "description": "Implement vertical timeline showing work history: Metropolis, MINIEYE, Meitu, SenseTime internship, UCSB visiting scholar, CAS research",
       "priority": 1,
-      "status": "incomplete",
-      "passes": false
+      "status": "complete",
+      "passes": true
     },
     {
       "id": 8,
