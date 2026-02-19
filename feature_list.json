@@ -37,8 +37,8 @@
       "name": "About section",
       "description": "Add About section with professional summary (tech lead at $5B AI company, 1100+ sites, 2D+3D vision expertise)",
       "priority": 1,
-      "status": "incomplete",
-      "passes": false
+      "status": "complete",
+      "passes": true
     },
     {
       "id": 6,
