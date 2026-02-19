@@ -113,3 +113,67 @@ REMEMBER:
 
 2026-02-19 15:21:40 [INFO] Calling claude...
 2026-02-19 15:21:40 [DEBUG] CMD: claude -p --max-turns 30 --output-format json --permission-mode bypassPermissions... (prompt length: 1788)
+2026-02-19 15:23:23 [DEBUG] claude exited with code 0 in 103.0s
+2026-02-19 15:23:23 [INFO] Claude returned in 103.0s
+2026-02-19 15:23:23 [DEBUG] Result summary: âœ… **Checkpoint completed!**
+
+## Iteration 2 Summary
+
+**What happened:**
+- Sub-agent successfully created `index.html` with complete semantic HTML5 structure
+- All 7 sections implemented: navigation, hero, about, projects, experience, skills, education, footer
+- Proper HTML5 semantics, IDs for navigation, accessibility attributes included
+- Feature #1 marked as complete in feature_list.json
+- Committed to git (hash: da890d5)
+
+**Current state:**
+- HTML skeleton is complete and ready for styling
+
+2026-02-19 15:23:23 [DEBUG] Session ID: 025b1b8d-2c9b-4a90-884d-4de9ee61f810
+2026-02-19 15:23:23 [INFO] Checkpoint verified: progress updated + new commit
+2026-02-19 15:23:25 [INFO] 
+============================================================
+2026-02-19 15:23:25 [INFO] ITERATION 3 / 15
+2026-02-19 15:23:25 [INFO] ============================================================
+2026-02-19 15:23:26 [DEBUG] Prompt (1972 chars):
+You are executing iteration 3 of the Dispatch Loop.
+Working directory: D:\projects\Ryanshuai.github.io
+
+HIGH-LEVEL GOAL: Build a personal GitHub Pages website (Ryanshuai.github.io) showcasing CV/3D Vision work. Pure static HTML/CSS/JS, dark theme, responsive, card-based projects section, timeline experience, skill tags. Placeholder images for now.
+
+CURRENT STATE (from claude-progress.txt, last entry):
+== 2026-02-19 15:25 ==
+Done: Created index.html with semantic HTML5 structure (7 sections: nav, hero, about, projects, experience, skills, education, footer)
+State: Feature #1 complete. HTML skeleton ready with proper structure, IDs, and placeholders. CSS/JS files linked but not created yet.
+Next: Implement feature #2 (CSS styling - dark theme, responsive layout)
+Codebase: index.html (15KB), feature_list.json updated (F#1 complete)
+
+RECENT GIT LOG:
+da890d5 checkpoint: created index.html with complete HTML5 structure
+ff697b8 checkpoint: created feature_list.json and init.sh
+360b3c6 init: task setup with progress file
+
+YOUR TASK FOR THIS ITERATION:
+
+1. Read claude-progress.txt fully (use Read tool) and git log --oneline -5
+2. Decide the next task unit — one concrete, focused action
+3. Spawn a sub-agent using the Task tool:
+   Task(prompt="<focused task description>", subagent_type="general-purpose")
+4. When the sub-agent returns, IMMEDIATELY checkpoint:
+   a. Append a checkpoint entry to claude-progress.txt (use Edit or Bash to append)
+      Format:
+      == YYYY-MM-DD HH:MM ==
+      Done: <what was accomplished>
+      State: <current state>
+      Next: <what the next iteration should do>
+      Codebase: <modified files + commit hash, or "none">
+   b. Run: git add -A && git commit -m "checkpoint: <brief summary>"
+5. Report what happened.
+
+REMEMBER:
+- You are the dispatcher. Do NOT directly code, run commands, or debug.
+- ONE task unit only. The harness will call you again for the next one.
+- CHECKPOINT IS MANDATORY. The harness checks for it.
+
+2026-02-19 15:23:26 [INFO] Calling claude...
+2026-02-19 15:23:26 [DEBUG] CMD: claude -p --max-turns 30 --output-format json --permission-mode bypassPermissions... (prompt length: 1972)
