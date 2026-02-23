@@ -8,198 +8,188 @@
     <title>Shuai Yan | Computer Vision & 3D Vision Engineer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <!-- Navigation -->
-    <nav id="navbar">
-        <div class="nav-container">
-            <a href="#home" class="nav-logo">Shuai Yan</a>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
-            </ul>
-        </div>
-    </nav>
+<body class="sidebar-layout">
+    <!-- Left Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-content">
+            <h1 class="sidebar-name">Shuai Yan</h1>
+            <p class="sidebar-title">Computer Vision & 3D Vision Engineer</p>
+            <p class="sidebar-about">Tech lead at a $5B AI company, building and deploying computer vision systems across 1100+ sites. From 2D perception pipelines to 3D reconstruction and digital twins — bridging research and production.</p>
 
-    <!-- Hero Section -->
-    <header id="home" class="hero-section">
-        <div class="hero-container">
-            <h1 class="hero-name">Shuai Yan</h1>
-            <p class="hero-title">Computer Vision & 3D Vision Engineer</p>
-            <p class="hero-about">Tech lead at a $5B AI company, building and deploying computer vision systems across 1100+ sites. From 2D perception pipelines to 3D reconstruction and digital twins — bridging research and production.</p>
-            <div class="hero-contact">
-                <a href="mailto:yanshuairyan@gmail.com" class="contact-link" aria-label="Email" target="_blank" rel="noopener noreferrer">
-                    <span>Email</span>
-                </a>
-                <a href="https://www.linkedin.com/in/shuai-yan-" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="LinkedIn">
-                    <span>LinkedIn</span>
-                </a>
-                <a href="https://github.com/Ryanshuai" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="GitHub">
-                    <span>GitHub</span>
-                </a>
+            <nav class="sidebar-nav">
+                <a href="#projects" class="sidebar-nav-link">Projects</a>
+                <a href="#education" class="sidebar-nav-link">Education</a>
+            </nav>
+
+            <div class="sidebar-contact">
+                <a href="mailto:yanshuairyan@gmail.com" class="contact-link" target="_blank" rel="noopener noreferrer">Email</a>
+                <a href="https://www.linkedin.com/in/shuai-yan-" target="_blank" rel="noopener noreferrer" class="contact-link">LinkedIn</a>
+                <a href="https://github.com/Ryanshuai" target="_blank" rel="noopener noreferrer" class="contact-link">GitHub</a>
             </div>
         </div>
-    </header>
+    </aside>
 
-    <main>
+    <!-- Main Content -->
+    <main class="main-content">
         <!-- Projects Section -->
         <section id="projects" class="projects-section">
-            <div class="container">
-                <h2 class="section-title">Projects</h2>
-                <!-- Featured Projects (full-width) -->
-                <div class="projects-featured">
-                    <a href="projects/digital_twin.html" class="project-card featured">
-                        <div class="project-image">
-                            <div class="placeholder-block" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: flex; align-items: center; justify-content: center; height: 100%; color: white; font-weight: bold;">3D Digital Twin</div>
+            <h2 class="section-title">Projects</h2>
+            <!-- Featured Projects -->
+            <div class="projects-featured">
+                <a href="projects/digital_twin.html" class="project-card featured">
+                    <div class="project-image">
+                        <div class="placeholder-block" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: flex; align-items: center; justify-content: center; height: 100%; color: white; font-weight: bold;">3D Digital Twin</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">3D Digital Twin Pipeline</h3>
+                        <p class="project-description">Complete 3D reconstruction pipeline using SfM, 3D Gaussian Splatting, and Unreal Engine for photorealistic digital twins and synthetic data generation.</p>
+                        <div class="project-tags">
+                            <span class="tag">SfM</span>
+                            <span class="tag">Gaussian Splatting</span>
+                            <span class="tag">Unreal Engine</span>
+                            <span class="tag">Synthetic Data</span>
                         </div>
-                        <div class="project-content">
-                            <h3 class="project-title">3D Digital Twin Pipeline</h3>
-                            <p class="project-description">Complete 3D reconstruction pipeline using SfM, 3D Gaussian Splatting, and Unreal Engine for photorealistic digital twins and synthetic data generation.</p>
-                            <div class="project-tags">
-                                <span class="tag">SfM</span>
-                                <span class="tag">Gaussian Splatting</span>
-                                <span class="tag">Unreal Engine</span>
-                                <span class="tag">Synthetic Data</span>
-                            </div>
-                        </div>
-                    </a>
+                    </div>
+                </a>
 
-                    <a href="projects/vehicle_perception.html" class="project-card featured">
-                        <div class="project-image">
-                            <div class="placeholder-block" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; height: 100%; color: white; font-weight: bold;">Vehicle Perception</div>
+                <a href="projects/vehicle_perception.html" class="project-card featured">
+                    <div class="project-image">
+                        <div class="placeholder-block" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; height: 100%; color: white; font-weight: bold;">Vehicle Perception</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Vehicle Perception System</h3>
+                        <p class="project-description">End-to-end vehicle perception pipeline integrating object detection, multi-object tracking, license plate OCR, and re-identification. Deployed at scale across 1100+ sites.</p>
+                        <div class="project-tags">
+                            <span class="tag">Object Detection</span>
+                            <span class="tag">Tracking</span>
+                            <span class="tag">OCR</span>
+                            <span class="tag">ReID</span>
                         </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Vehicle Perception System</h3>
-                            <p class="project-description">End-to-end vehicle perception pipeline integrating object detection, multi-object tracking, license plate OCR, and re-identification. Deployed at scale across 1100+ sites.</p>
-                            <div class="project-tags">
-                                <span class="tag">Object Detection</span>
-                                <span class="tag">Tracking</span>
-                                <span class="tag">OCR</span>
-                                <span class="tag">ReID</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
+            </div>
 
-                <!-- Other Projects (normal grid) -->
-                <div class="projects-grid">
-                    <a href="https://github.com/Ryanshuai" target="_blank" rel="noopener noreferrer" class="project-card">
-                        <div class="project-image">
-                            <div class="placeholder-block" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); display: flex; align-items: center; justify-content: center; height: 100%; color: white; font-weight: bold;">Gaussian Splatting</div>
+            <!-- Other Projects -->
+            <div class="projects-grid">
+                <a href="https://github.com/Ryanshuai/cupy_3dgs" target="_blank" rel="noopener noreferrer" class="project-card">
+                    <div class="project-image">
+                        <img src="assets/gaussian_splatting/readme_image.png" alt="3D Gaussian Splatting CuPy">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">3D Gaussian Splatting CuPy</h3>
+                        <p class="project-description">GPU-accelerated Python implementation of 3DGS using CuPy and CUDA kernels. ★42</p>
+                        <div class="project-tags">
+                            <span class="tag">CUDA</span>
+                            <span class="tag">CuPy</span>
+                            <span class="tag">3DGS</span>
                         </div>
-                        <div class="project-content">
-                            <h3 class="project-title">3D Gaussian Splatting CuPy</h3>
-                            <p class="project-description">GPU-accelerated Python implementation of 3DGS using CuPy and CUDA kernels.</p>
-                            <div class="project-tags">
-                                <span class="tag">CUDA</span>
-                                <span class="tag">CuPy</span>
-                                <span class="tag">3DGS</span>
-                            </div>
-                        </div>
-                    </a>
+                    </div>
+                </a>
 
-                    <a href="https://github.com/Ryanshuai" target="_blank" rel="noopener noreferrer" class="project-card">
-                        <div class="project-image">
-                            <div class="placeholder-block" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); display: flex; align-items: center; justify-content: center; height: 100%; color: white; font-weight: bold;">SfM Pipeline</div>
+                <a href="https://github.com/Ryanshuai/py_gtsam_sfm" target="_blank" rel="noopener noreferrer" class="project-card">
+                    <div class="project-image">
+                        <img src="assets/sfm_pipeline/block_image.png" alt="Incremental SfM Pipeline">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Incremental SfM Pipeline</h3>
+                        <p class="project-description">Full-featured Structure from Motion with feature matching, pose estimation, and bundle adjustment.</p>
+                        <div class="project-tags">
+                            <span class="tag">SfM</span>
+                            <span class="tag">C++</span>
+                            <span class="tag">Python</span>
                         </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Incremental SfM Pipeline</h3>
-                            <p class="project-description">Full-featured Structure from Motion with feature matching, pose estimation, and bundle adjustment.</p>
-                            <div class="project-tags">
-                                <span class="tag">SfM</span>
-                                <span class="tag">C++</span>
-                                <span class="tag">Python</span>
-                            </div>
-                        </div>
-                    </a>
+                    </div>
+                </a>
 
-                    <a href="https://github.com/Ryanshuai" target="_blank" rel="noopener noreferrer" class="project-card">
-                        <div class="project-image">
-                            <div class="placeholder-block" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); display: flex; align-items: center; justify-content: center; height: 100%; color: white; font-weight: bold;">DL Framework</div>
+                <a href="https://github.com/Ryanshuai" target="_blank" rel="noopener noreferrer" class="project-card">
+                    <div class="project-image">
+                        <img src="assets/deep_learning_framework/block_image.png" alt="Deep Learning Framework from Scratch">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Deep Learning Framework from Scratch</h3>
+                        <p class="project-description">Neural network framework built from scratch with NumPy — autograd, conv layers, optimizers.</p>
+                        <div class="project-tags">
+                            <span class="tag">Deep Learning</span>
+                            <span class="tag">NumPy</span>
                         </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Deep Learning Framework from Scratch</h3>
-                            <p class="project-description">Neural network framework built from scratch with NumPy — autograd, conv layers, optimizers.</p>
-                            <div class="project-tags">
-                                <span class="tag">Deep Learning</span>
-                                <span class="tag">NumPy</span>
-                            </div>
-                        </div>
-                    </a>
+                    </div>
+                </a>
 
-                    <a href="https://github.com/Ryanshuai" target="_blank" rel="noopener noreferrer" class="project-card">
-                        <div class="project-image">
-                            <div class="placeholder-block" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); display: flex; align-items: center; justify-content: center; height: 100%; color: #333; font-weight: bold;">BM3D ★256</div>
+                <a href="https://github.com/Ryanshuai/BM3D_py" target="_blank" rel="noopener noreferrer" class="project-card">
+                    <div class="project-image">
+                        <img src="assets/bm3d/block_image.png" alt="BM3D Python Implementation">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">BM3D Python Implementation</h3>
+                        <p class="project-description">Pure Python/NumPy BM3D image denoising. ★264</p>
+                        <div class="project-tags">
+                            <span class="tag">Denoising</span>
+                            <span class="tag">NumPy</span>
                         </div>
-                        <div class="project-content">
-                            <h3 class="project-title">BM3D Python Implementation</h3>
-                            <p class="project-description">Pure Python/NumPy BM3D image denoising. 256+ GitHub stars.</p>
-                            <div class="project-tags">
-                                <span class="tag">Denoising</span>
-                                <span class="tag">NumPy</span>
-                            </div>
-                        </div>
-                    </a>
+                    </div>
+                </a>
 
-                    <a href="#" class="project-card">
-                        <div class="project-image">
-                            <div class="placeholder-block" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); display: flex; align-items: center; justify-content: center; height: 100%; color: white; font-weight: bold;">Vanishing Point</div>
+                <a href="https://ieeexplore.ieee.org/document/7967487" target="_blank" rel="noopener noreferrer" class="project-card">
+                    <div class="project-image">
+                        <img src="assets/vanishing_point/block_image.png" alt="CNN Vanishing Point Detection">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">CNN Vanishing Point Detection</h3>
+                        <p class="project-description">CNN-based vanishing point detection combining classical geometry with deep learning.</p>
+                        <div class="project-tags">
+                            <span class="tag">CNN</span>
+                            <span class="tag">Geometry</span>
+                            <span class="tag">Paper</span>
                         </div>
-                        <div class="project-content">
-                            <h3 class="project-title">CNN Vanishing Point Detection</h3>
-                            <p class="project-description">CNN-based vanishing point detection combining classical geometry with deep learning.</p>
-                            <div class="project-tags">
-                                <span class="tag">CNN</span>
-                                <span class="tag">Geometry</span>
-                                <span class="tag">Paper</span>
-                            </div>
+                    </div>
+                </a>
+
+                <a href="https://github.com/Ryanshuai/pyKeyboard" target="_blank" rel="noopener noreferrer" class="project-card">
+                    <div class="project-image">
+                        <img src="assets/pykeyboard/block_image.png" alt="pyKeyboard">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">pyKeyboard</h3>
+                        <p class="project-description">Custom keyboard firmware with CircuitPython, MicroPython and STM32F411 support.</p>
+                        <div class="project-tags">
+                            <span class="tag">Firmware</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">C</span>
                         </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </div>
         </section>
 
         <!-- Education Section -->
         <section id="education" class="education-section">
-            <div class="container">
-                <h2 class="section-title">Education</h2>
-                <div class="education-list">
-                    <article class="education-item">
-                        <h3 class="education-degree">M.S. in Computer Science,</h3>
-                        <p class="education-institution">University of California, Riverside</p>
-                        <p class="education-date">2020 – 2022</p>
-                    </article>
-                    <article class="education-item">
-                        <h3 class="education-degree">M.E. in Computer Science,</h3>
-                        <p class="education-institution">Chinese Academy of Sciences</p>
-                        <p class="education-date">2015 – 2018</p>
-                    </article>
-                    <article class="education-item">
-                        <h3 class="education-degree">B.S. in Computer Science,</h3>
-                        <p class="education-institution">University of Electronic Science and Technology of China</p>
-                        <p class="education-date">2011 – 2015</p>
-                    </article>
-                </div>
+            <h2 class="section-title">Education</h2>
+            <div class="education-list">
+                <article class="education-item">
+                    <h3 class="education-degree">M.S. in Computer Science</h3>
+                    <p class="education-institution">University of California, Riverside</p>
+                    <p class="education-date">Dec. 2022</p>
+                </article>
+                <article class="education-item">
+                    <h3 class="education-degree">M.E. in Control Engineering</h3>
+                    <p class="education-institution">Institute of Automation, Chinese Academy of Sciences</p>
+                    <p class="education-date">Jun. 2018</p>
+                </article>
+                <article class="education-item">
+                    <h3 class="education-degree">B.S. in Mathematics and Physics</h3>
+                    <p class="education-institution">University of Electronic Science and Technology of China</p>
+                    <p class="education-date">Jun. 2015</p>
+                </article>
             </div>
         </section>
-    </main>
 
-    <!-- Footer -->
-    <footer id="footer" class="footer-section">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-contact">
-                    <h3>Contact</h3>
-                    <p>Email: <a href="mailto:yanshuairyan@gmail.com">yanshuairyan@gmail.com</a></p>
-                    <p>LinkedIn: <a href="https://www.linkedin.com/in/shuai-yan-" target="_blank" rel="noopener noreferrer">linkedin.com/in/shuai-yan-</a></p>
-                    <p>GitHub: <a href="https://github.com/Ryanshuai" target="_blank" rel="noopener noreferrer">github.com/Ryanshuai</a></p>
-                </div>
-                <div class="footer-copyright">
-                    <p>&copy; 2026 Shuai Yan. All rights reserved.</p>
-                </div>
+        <!-- Footer -->
+        <footer class="footer-section">
+            <div class="footer-copyright">
+                <p>&copy; 2026 Shuai Yan. All rights reserved.</p>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </main>
 
     <script src="script.js"></script>
 </body>
