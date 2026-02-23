@@ -38,7 +38,7 @@
         <!-- Reconstruction Results -->
         <section class="project-section">
             <div class="container">
-                <h2 class="section-heading">Reconstruction Results</h2>
+                <h2 class="section-heading">Pipeline Architecture</h2>
 
                 <h3 class="demo-sub-heading">Individual Group Reconstructions</h3>
                 <div class="demo-video-grid">
@@ -107,79 +107,6 @@
             </div>
         </section>
 
-        <!-- Pipeline Architecture -->
-        <section class="project-section">
-            <div class="container">
-                <h2 class="section-heading">Pipeline Architecture</h2>
-                <div class="architecture-flow">
-                    <div class="flow-step">
-                        <div class="flow-number">1</div>
-                        <h3>Image Capture</h3>
-                        <p>Structured image collection from multiple viewpoints to ensure complete scene coverage and sufficient overlap for reconstruction.</p>
-                    </div>
-                    <div class="flow-connector">→</div>
-                    <div class="flow-step">
-                        <div class="flow-number">2</div>
-                        <h3>SfM Reconstruction</h3>
-                        <p>Structure from Motion to recover camera poses and sparse 3D point cloud. Feature matching, pose estimation, and bundle adjustment.</p>
-                    </div>
-                    <div class="flow-connector">→</div>
-                    <div class="flow-step">
-                        <div class="flow-number">3</div>
-                        <h3>3D Gaussian Splatting</h3>
-                        <p>Dense photorealistic reconstruction using 3D Gaussian primitives. Real-time rendering quality with explicit 3D representation.</p>
-                    </div>
-                    <div class="flow-connector">→</div>
-                    <div class="flow-step">
-                        <div class="flow-number">4</div>
-                        <h3>Unreal Engine Integration</h3>
-                        <p>Import into Unreal Engine for interactive visualization, virtual camera placement, and photorealistic synthetic data rendering.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Technical Highlights -->
-        <section class="project-section alt-bg">
-            <div class="container">
-                <h2 class="section-heading">Technical Highlights</h2>
-                <div class="highlights-grid">
-                    <div class="highlight-card">
-                        <h3>Photorealistic Quality</h3>
-                        <p>3D Gaussian Splatting produces near-photorealistic novel view synthesis, enabling convincing digital twin visualization.</p>
-                    </div>
-                    <div class="highlight-card">
-                        <h3>Synthetic Data</h3>
-                        <p>Generate unlimited training data with precise ground-truth labels, reducing dependency on manual annotation.</p>
-                    </div>
-                    <div class="highlight-card">
-                        <h3>Real-Time Rendering</h3>
-                        <p>Gaussian Splatting enables real-time rendering at high resolution, making interactive exploration practical.</p>
-                    </div>
-                    <div class="highlight-card">
-                        <h3>End-to-End Pipeline</h3>
-                        <p>From raw images to interactive 3D environment — fully automated pipeline with minimal manual intervention.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Tech Stack -->
-        <section class="project-section">
-            <div class="container">
-                <h2 class="section-heading">Tech Stack</h2>
-                <div class="tech-stack-list">
-                    <span class="tech-item">Python</span>
-                    <span class="tech-item">PyTorch</span>
-                    <span class="tech-item">CUDA</span>
-                    <span class="tech-item">COLMAP</span>
-                    <span class="tech-item">3D Gaussian Splatting</span>
-                    <span class="tech-item">Unreal Engine</span>
-                    <span class="tech-item">C++</span>
-                    <span class="tech-item">OpenCV</span>
-                </div>
-            </div>
-        </section>
     </main>
 
     <!-- Footer -->
