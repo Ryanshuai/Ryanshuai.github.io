@@ -15,10 +15,7 @@
             <a href="#home" class="nav-logo">Shuai Yan</a>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#education" class="nav-link">Education</a></li>
             </ul>
         </div>
@@ -29,11 +26,12 @@
         <div class="hero-container">
             <h1 class="hero-name">Shuai Yan</h1>
             <p class="hero-title">Computer Vision & 3D Vision Engineer</p>
+            <p class="hero-about">Tech lead at a $5B AI company, building and deploying computer vision systems across 1100+ sites. From 2D perception pipelines to 3D reconstruction and digital twins — bridging research and production.</p>
             <div class="hero-contact">
-                <a href="mailto:contact@ryanshuai.github.io" class="contact-link" aria-label="Email">
+                <a href="mailto:yanshuairyan@gmail.com" class="contact-link" aria-label="Email" target="_blank" rel="noopener noreferrer">
                     <span>Email</span>
                 </a>
-                <a href="https://linkedin.com/in/shuaiyan" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/shuai-yan-" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="LinkedIn">
                     <span>LinkedIn</span>
                 </a>
                 <a href="https://github.com/Ryanshuai" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="GitHub">
@@ -44,325 +42,119 @@
     </header>
 
     <main>
-        <!-- About Section -->
-        <section id="about" class="about-section">
-            <div class="container">
-                <h2 class="section-title">About Me</h2>
-                <div class="about-content">
-                    <p>
-                        As a tech lead at a $5 billion AI company, I specialize in building and deploying computer vision systems at scale.
-                        With experience managing intelligent perception solutions across 1100+ sites, I bring a unique combination of technical
-                        depth and operational excellence to every project. My work spans the full spectrum of visual intelligence, from classical
-                        2D computer vision algorithms to cutting-edge 3D reconstruction and spatial understanding.
-                    </p>
-                    <p>
-                        I'm passionate about bridging the gap between research and production, transforming advanced CV and 3D vision techniques
-                        into robust, real-world applications. Whether it's developing deep learning models for vehicle perception, creating
-                        photorealistic 3D digital twins, or optimizing vision pipelines for edge deployment, I thrive on solving complex technical
-                        challenges that make a measurable impact. My approach combines strong fundamentals in mathematics and computer science with
-                        hands-on experience in modern ML frameworks and GPU computing.
-                    </p>
-                </div>
-            </div>
-        </section>
-
         <!-- Projects Section -->
         <section id="projects" class="projects-section">
             <div class="container">
                 <h2 class="section-title">Projects</h2>
-                <div class="projects-grid">
-                    <!-- Project Card 1 -->
-                    <article class="project-card">
-                        <div class="project-image">
-                            <div class="placeholder-block" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; height: 100%; color: white; font-weight: bold;">Vehicle Perception</div>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Vehicle Perception System</h3>
-                            <p class="project-description">End-to-end vehicle perception pipeline integrating object detection, multi-object tracking, license plate OCR, and re-identification. Deployed at scale to provide comprehensive vehicle intelligence including trajectory tracking, identity matching, and attribute recognition across camera networks.</p>
-                            <div class="project-tags">
-                                <span class="tag">Computer Vision</span>
-                                <span class="tag">Deep Learning</span>
-                                <span class="tag">Object Detection</span>
-                                <span class="tag">Tracking</span>
-                                <span class="tag">OCR</span>
-                                <span class="tag">ReID</span>
-                            </div>
-                            <a href="#" class="project-link">Company Project</a>
-                        </div>
-                    </article>
-
-                    <!-- Project Card 2 -->
-                    <article class="project-card">
+                <!-- Featured Projects (full-width) -->
+                <div class="projects-featured">
+                    <a href="projects/digital_twin.html" class="project-card featured">
                         <div class="project-image">
                             <div class="placeholder-block" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: flex; align-items: center; justify-content: center; height: 100%; color: white; font-weight: bold;">3D Digital Twin</div>
                         </div>
                         <div class="project-content">
                             <h3 class="project-title">3D Digital Twin Pipeline</h3>
-                            <p class="project-description">Complete 3D reconstruction pipeline using Structure from Motion for scene geometry, 3D Gaussian Splatting for photorealistic rendering, and Unreal Engine integration for synthetic data generation. Enables creation of high-fidelity digital twins for simulation, visualization, and training data augmentation.</p>
+                            <p class="project-description">Complete 3D reconstruction pipeline using SfM, 3D Gaussian Splatting, and Unreal Engine for photorealistic digital twins and synthetic data generation.</p>
                             <div class="project-tags">
-                                <span class="tag">3D Reconstruction</span>
                                 <span class="tag">SfM</span>
                                 <span class="tag">Gaussian Splatting</span>
                                 <span class="tag">Unreal Engine</span>
                                 <span class="tag">Synthetic Data</span>
                             </div>
-                            <a href="#" class="project-link">Company Project</a>
                         </div>
-                    </article>
+                    </a>
 
-                    <!-- Project Card 3 -->
-                    <article class="project-card">
+                    <a href="projects/vehicle_perception.html" class="project-card featured">
+                        <div class="project-image">
+                            <div class="placeholder-block" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; height: 100%; color: white; font-weight: bold;">Vehicle Perception</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Vehicle Perception System</h3>
+                            <p class="project-description">End-to-end vehicle perception pipeline integrating object detection, multi-object tracking, license plate OCR, and re-identification. Deployed at scale across 1100+ sites.</p>
+                            <div class="project-tags">
+                                <span class="tag">Object Detection</span>
+                                <span class="tag">Tracking</span>
+                                <span class="tag">OCR</span>
+                                <span class="tag">ReID</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Other Projects (normal grid) -->
+                <div class="projects-grid">
+                    <a href="https://github.com/Ryanshuai" target="_blank" rel="noopener noreferrer" class="project-card">
                         <div class="project-image">
                             <div class="placeholder-block" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); display: flex; align-items: center; justify-content: center; height: 100%; color: white; font-weight: bold;">Gaussian Splatting</div>
                         </div>
                         <div class="project-content">
-                            <h3 class="project-title">3D Gaussian Splatting CuPy Implementation</h3>
-                            <p class="project-description">High-performance Python implementation of 3D Gaussian Splatting using CuPy for GPU acceleration. Implements efficient CUDA kernels for real-time novel view synthesis and 3D scene representation. Open source project demonstrating advanced GPU computing techniques for computer graphics and 3D vision.</p>
+                            <h3 class="project-title">3D Gaussian Splatting CuPy</h3>
+                            <p class="project-description">GPU-accelerated Python implementation of 3DGS using CuPy and CUDA kernels.</p>
                             <div class="project-tags">
-                                <span class="tag">3D Vision</span>
                                 <span class="tag">CUDA</span>
                                 <span class="tag">CuPy</span>
-                                <span class="tag">Gaussian Splatting</span>
-                                <span class="tag">Python</span>
+                                <span class="tag">3DGS</span>
                             </div>
-                            <a href="https://github.com/Ryanshuai" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub →</a>
                         </div>
-                    </article>
+                    </a>
 
-                    <!-- Project Card 4 -->
-                    <article class="project-card">
+                    <a href="https://github.com/Ryanshuai" target="_blank" rel="noopener noreferrer" class="project-card">
                         <div class="project-image">
                             <div class="placeholder-block" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); display: flex; align-items: center; justify-content: center; height: 100%; color: white; font-weight: bold;">SfM Pipeline</div>
                         </div>
                         <div class="project-content">
                             <h3 class="project-title">Incremental SfM Pipeline</h3>
-                            <p class="project-description">Full-featured Structure from Motion implementation supporting incremental reconstruction from image sequences. Includes feature detection and matching, camera pose estimation, bundle adjustment, and dense point cloud generation. Built with C++ for performance and Python bindings for ease of use, following COLMAP-style architecture.</p>
+                            <p class="project-description">Full-featured Structure from Motion with feature matching, pose estimation, and bundle adjustment.</p>
                             <div class="project-tags">
-                                <span class="tag">3D Reconstruction</span>
                                 <span class="tag">SfM</span>
-                                <span class="tag">SLAM</span>
                                 <span class="tag">C++</span>
                                 <span class="tag">Python</span>
                             </div>
-                            <a href="https://github.com/Ryanshuai" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub →</a>
                         </div>
-                    </article>
+                    </a>
 
-                    <!-- Project Card 5 -->
-                    <article class="project-card">
+                    <a href="https://github.com/Ryanshuai" target="_blank" rel="noopener noreferrer" class="project-card">
                         <div class="project-image">
-                            <div class="placeholder-block" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); display: flex; align-items: center; justify-content: center; height: 100%; color: white; font-weight: bold;">Deep Learning Framework</div>
+                            <div class="placeholder-block" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); display: flex; align-items: center; justify-content: center; height: 100%; color: white; font-weight: bold;">DL Framework</div>
                         </div>
                         <div class="project-content">
                             <h3 class="project-title">Deep Learning Framework from Scratch</h3>
-                            <p class="project-description">Educational deep learning framework built entirely from scratch using only NumPy. Implements automatic differentiation, common layer types (convolutional, pooling, fully connected), activation functions, optimizers, and training utilities. Demonstrates deep understanding of neural network fundamentals and computational graph architectures.</p>
+                            <p class="project-description">Neural network framework built from scratch with NumPy — autograd, conv layers, optimizers.</p>
                             <div class="project-tags">
                                 <span class="tag">Deep Learning</span>
-                                <span class="tag">Neural Networks</span>
-                                <span class="tag">Python</span>
                                 <span class="tag">NumPy</span>
                             </div>
-                            <a href="https://github.com/Ryanshuai" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub →</a>
                         </div>
-                    </article>
+                    </a>
 
-                    <!-- Project Card 6 -->
-                    <article class="project-card">
+                    <a href="https://github.com/Ryanshuai" target="_blank" rel="noopener noreferrer" class="project-card">
                         <div class="project-image">
-                            <div class="placeholder-block" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); display: flex; align-items: center; justify-content: center; height: 100%; color: #333; font-weight: bold;">BM3D Denoising</div>
+                            <div class="placeholder-block" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); display: flex; align-items: center; justify-content: center; height: 100%; color: #333; font-weight: bold;">BM3D ★256</div>
                         </div>
                         <div class="project-content">
                             <h3 class="project-title">BM3D Python Implementation</h3>
-                            <p class="project-description">Pure Python/NumPy implementation of the BM3D (Block-Matching and 3D filtering) image denoising algorithm. Achieves state-of-the-art denoising performance through collaborative filtering in transform domain. Popular open source project with 256+ GitHub stars, widely used for image restoration and preprocessing tasks.</p>
+                            <p class="project-description">Pure Python/NumPy BM3D image denoising. 256+ GitHub stars.</p>
                             <div class="project-tags">
-                                <span class="tag">Image Processing</span>
                                 <span class="tag">Denoising</span>
-                                <span class="tag">Python</span>
                                 <span class="tag">NumPy</span>
                             </div>
-                            <a href="https://github.com/Ryanshuai" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub (256★) →</a>
                         </div>
-                    </article>
+                    </a>
 
-                    <!-- Project Card 7 -->
-                    <article class="project-card">
+                    <a href="#" class="project-card">
                         <div class="project-image">
-                            <div class="placeholder-block" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); display: flex; align-items: center; justify-content: center; height: 100%; color: white; font-weight: bold;">Vanishing Point Detection</div>
+                            <div class="placeholder-block" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); display: flex; align-items: center; justify-content: center; height: 100%; color: white; font-weight: bold;">Vanishing Point</div>
                         </div>
                         <div class="project-content">
                             <h3 class="project-title">CNN Vanishing Point Detection</h3>
-                            <p class="project-description">Research project applying convolutional neural networks to vanishing point detection in perspective images. Leverages deep learning for robust geometric analysis of architectural and street scenes. Combines classical geometric vision principles with modern deep learning techniques for improved accuracy and generalization.</p>
+                            <p class="project-description">CNN-based vanishing point detection combining classical geometry with deep learning.</p>
                             <div class="project-tags">
-                                <span class="tag">Computer Vision</span>
                                 <span class="tag">CNN</span>
-                                <span class="tag">Vanishing Point</span>
-                                <span class="tag">Deep Learning</span>
+                                <span class="tag">Geometry</span>
+                                <span class="tag">Paper</span>
                             </div>
-                            <a href="#" class="project-link">Research Project</a>
                         </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience" class="experience-section">
-            <div class="container">
-                <h2 class="section-title">Experience</h2>
-                <div class="timeline">
-                    <!-- Experience Item 1 - Metropolis -->
-                    <article class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3 class="timeline-title">Tech Lead / Senior Computer Vision Engineer</h3>
-                            <p class="timeline-company">Metropolis</p>
-                            <p class="timeline-date">2022 - Present</p>
-                            <p class="timeline-description">Leading computer vision engineering at a large-scale AI company, managing intelligent perception solutions deployed across 1100+ sites. Responsible for technical architecture, team leadership, and delivering production-grade vision systems including vehicle perception, 3D reconstruction, and real-time analytics at scale.</p>
-                        </div>
-                    </article>
-
-                    <!-- Experience Item 2 - MINIEYE -->
-                    <article class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3 class="timeline-title">Computer Vision Engineer</h3>
-                            <p class="timeline-company">MINIEYE</p>
-                            <p class="timeline-date">2020 - 2022</p>
-                            <p class="timeline-description">Developed advanced vehicle perception systems for automotive applications, including object detection, tracking, and scene understanding algorithms. Worked on embedded vision systems optimized for real-time performance on edge devices, contributing to ADAS solutions deployed in production vehicles.</p>
-                        </div>
-                    </article>
-
-                    <!-- Experience Item 3 - Meitu -->
-                    <article class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3 class="timeline-title">Computer Vision Engineer</h3>
-                            <p class="timeline-company">Meitu</p>
-                            <p class="timeline-date">2018 - 2020</p>
-                            <p class="timeline-description">Built computer vision and image processing systems for consumer-facing applications, focusing on face analysis, image enhancement, and real-time video processing. Developed deep learning models for facial landmark detection, semantic segmentation, and style transfer deployed to millions of users.</p>
-                        </div>
-                    </article>
-
-                    <!-- Experience Item 4 - SenseTime -->
-                    <article class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3 class="timeline-title">Research Intern</h3>
-                            <p class="timeline-company">SenseTime</p>
-                            <p class="timeline-date">2017 - 2018</p>
-                            <p class="timeline-description">Conducted research in deep learning and computer vision, focusing on object detection and recognition algorithms. Contributed to experimental implementations of state-of-the-art CNN architectures and participated in research projects advancing the field of visual understanding and scene analysis.</p>
-                        </div>
-                    </article>
-
-                    <!-- Experience Item 5 - UCSB -->
-                    <article class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3 class="timeline-title">Visiting Scholar</h3>
-                            <p class="timeline-company">University of California, Santa Barbara</p>
-                            <p class="timeline-date">2016 - 2017</p>
-                            <p class="timeline-description">Engaged in collaborative research on computer vision and machine learning projects. Worked with research faculty on advanced topics in visual recognition, contributing to academic publications and exploring novel approaches to computer vision problems in a university research environment.</p>
-                        </div>
-                    </article>
-
-                    <!-- Experience Item 6 - CAS -->
-                    <article class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3 class="timeline-title">Research Assistant</h3>
-                            <p class="timeline-company">Chinese Academy of Sciences</p>
-                            <p class="timeline-date">2014 - 2016</p>
-                            <p class="timeline-description">Conducted research in computer vision and 3D reconstruction at a leading academic institution. Focused on Structure from Motion, multi-view geometry, and photogrammetry algorithms. Contributed to research projects advancing 3D scene understanding and spatial reconstruction techniques.</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="skills-section">
-            <div class="container">
-                <h2 class="section-title">Skills</h2>
-                <div class="skills-container">
-                    <!-- Languages -->
-                    <div class="skills-category">
-                        <h3 class="category-title">Languages</h3>
-                        <div class="skills-tags">
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">C++</span>
-                            <span class="skill-tag">C</span>
-                            <span class="skill-tag">CUDA</span>
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">SQL</span>
-                            <span class="skill-tag">Bash</span>
-                        </div>
-                    </div>
-
-                    <!-- ML/CV Frameworks -->
-                    <div class="skills-category">
-                        <h3 class="category-title">ML/CV Frameworks</h3>
-                        <div class="skills-tags">
-                            <span class="skill-tag">PyTorch</span>
-                            <span class="skill-tag">TensorFlow</span>
-                            <span class="skill-tag">OpenCV</span>
-                            <span class="skill-tag">ONNX</span>
-                            <span class="skill-tag">TensorRT</span>
-                            <span class="skill-tag">scikit-learn</span>
-                        </div>
-                    </div>
-
-                    <!-- GPU Computing -->
-                    <div class="skills-category">
-                        <h3 class="category-title">GPU Computing</h3>
-                        <div class="skills-tags">
-                            <span class="skill-tag">CUDA</span>
-                            <span class="skill-tag">CuPy</span>
-                            <span class="skill-tag">TensorRT</span>
-                            <span class="skill-tag">cuDNN</span>
-                            <span class="skill-tag">NVIDIA Triton</span>
-                            <span class="skill-tag">GPU Optimization</span>
-                        </div>
-                    </div>
-
-                    <!-- Specializations -->
-                    <div class="skills-category">
-                        <h3 class="category-title">Specializations</h3>
-                        <div class="skills-tags">
-                            <span class="skill-tag">Object Detection</span>
-                            <span class="skill-tag">Tracking</span>
-                            <span class="skill-tag">3D Reconstruction</span>
-                            <span class="skill-tag">SfM</span>
-                            <span class="skill-tag">Gaussian Splatting</span>
-                            <span class="skill-tag">OCR</span>
-                            <span class="skill-tag">ReID</span>
-                            <span class="skill-tag">Image Processing</span>
-                        </div>
-                    </div>
-
-                    <!-- 3D Tools -->
-                    <div class="skills-category">
-                        <h3 class="category-title">3D Tools</h3>
-                        <div class="skills-tags">
-                            <span class="skill-tag">Structure from Motion</span>
-                            <span class="skill-tag">Point Clouds</span>
-                            <span class="skill-tag">Gaussian Splatting</span>
-                            <span class="skill-tag">Unreal Engine</span>
-                            <span class="skill-tag">Meshroom</span>
-                            <span class="skill-tag">COLMAP</span>
-                        </div>
-                    </div>
-
-                    <!-- Edge Computing -->
-                    <div class="skills-category">
-                        <h3 class="category-title">Edge Computing</h3>
-                        <div class="skills-tags">
-                            <span class="skill-tag">Jetson</span>
-                            <span class="skill-tag">Model Quantization</span>
-                            <span class="skill-tag">ONNX Runtime</span>
-                            <span class="skill-tag">Edge Deployment</span>
-                            <span class="skill-tag">Real-time Inference</span>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -372,28 +164,20 @@
             <div class="container">
                 <h2 class="section-title">Education</h2>
                 <div class="education-list">
-                    <!-- Education Item 1 -->
                     <article class="education-item">
-                        <h3 class="education-degree">Master of Science (MS) in Computer Science</h3>
-                        <p class="education-institution">University of California, Riverside (UC Riverside)</p>
-                        <p class="education-date">2012 - 2014</p>
-                        <p class="education-description">Advanced study in computer vision and machine learning, with coursework covering image processing, pattern recognition, and computational photography. Research focused on applying machine learning techniques to visual recognition and scene understanding problems.</p>
+                        <h3 class="education-degree">M.S. in Computer Science,</h3>
+                        <p class="education-institution">University of California, Riverside</p>
+                        <p class="education-date">2020 – 2022</p>
                     </article>
-
-                    <!-- Education Item 2 -->
                     <article class="education-item">
-                        <h3 class="education-degree">Master of Engineering (ME)</h3>
-                        <p class="education-institution">Chinese Academy of Sciences (CAS)</p>
-                        <p class="education-date">2010 - 2012</p>
-                        <p class="education-description">Research focus on computer vision and 3D reconstruction techniques, including Structure from Motion, multi-view geometry, and photogrammetry. Developed expertise in classical computer vision algorithms and spatial reconstruction methods.</p>
+                        <h3 class="education-degree">M.E. in Computer Science,</h3>
+                        <p class="education-institution">Chinese Academy of Sciences</p>
+                        <p class="education-date">2015 – 2018</p>
                     </article>
-
-                    <!-- Education Item 3 -->
                     <article class="education-item">
-                        <h3 class="education-degree">Bachelor of Science (BS)</h3>
-                        <p class="education-institution">University of Electronic Science and Technology of China (UESTC)</p>
-                        <p class="education-date">2006 - 2010</p>
-                        <p class="education-description">Strong foundation in computer science and engineering fundamentals, including algorithms, data structures, mathematics, and programming. Coursework covered core topics in software engineering, signal processing, and computational theory.</p>
+                        <h3 class="education-degree">B.S. in Computer Science,</h3>
+                        <p class="education-institution">University of Electronic Science and Technology of China</p>
+                        <p class="education-date">2011 – 2015</p>
                     </article>
                 </div>
             </div>
@@ -406,8 +190,8 @@
             <div class="footer-content">
                 <div class="footer-contact">
                     <h3>Contact</h3>
-                    <p>Email: <a href="mailto:contact@ryanshuai.github.io">contact@ryanshuai.github.io</a></p>
-                    <p>LinkedIn: <a href="https://linkedin.com/in/shuaiyan" target="_blank" rel="noopener noreferrer">linkedin.com/in/shuaiyan</a></p>
+                    <p>Email: <a href="mailto:yanshuairyan@gmail.com">yanshuairyan@gmail.com</a></p>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/shuai-yan-" target="_blank" rel="noopener noreferrer">linkedin.com/in/shuai-yan-</a></p>
                     <p>GitHub: <a href="https://github.com/Ryanshuai" target="_blank" rel="noopener noreferrer">github.com/Ryanshuai</a></p>
                 </div>
                 <div class="footer-copyright">

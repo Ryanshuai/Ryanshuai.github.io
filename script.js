@@ -58,6 +58,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // Fallback for mailto links on file:// protocol
+    document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.location.href = this.getAttribute('href');
+        });
+    });
+
     // Initial call to set active nav on page load
     setActiveNav();
 });

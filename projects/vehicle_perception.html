@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vehicle Perception System - End-to-end pipeline for object detection, tracking, OCR, and re-identification">
+    <title>Vehicle Perception System | Shuai Yan</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../project-detail.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">Shuai Yan</a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">← Back</a></li>
+                <li><a href="../index.html#projects" class="nav-link">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="project-detail">
+        <!-- Project Hero -->
+        <section class="project-hero">
+            <div class="container">
+                <h1 class="project-detail-title">Vehicle Perception System</h1>
+                <p class="project-detail-subtitle">End-to-end vehicle perception pipeline deployed at scale across 1100+ sites</p>
+                <div class="project-detail-tags">
+                    <span class="tag">Object Detection</span>
+                    <span class="tag">Multi-Object Tracking</span>
+                    <span class="tag">License Plate OCR</span>
+                    <span class="tag">Vehicle Re-ID</span>
+                    <span class="tag">Edge Deployment</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Overview -->
+        <section class="project-section">
+            <div class="container">
+                <h2 class="section-heading">Overview</h2>
+                <div class="project-text">
+                    <p>Designed and built a comprehensive vehicle perception system that integrates multiple computer vision modules into a unified pipeline. The system processes real-time video feeds to detect, track, and identify vehicles with high accuracy and low latency.</p>
+                    <p>The pipeline handles the full lifecycle: from initial vehicle detection to persistent tracking across frames, license plate recognition, and cross-camera re-identification — enabling real-time traffic analytics at scale.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Media Showcase -->
+        <section class="project-section alt-bg">
+            <div class="container">
+                <h2 class="section-heading">Demo</h2>
+                <div class="media-grid">
+                    <div class="media-placeholder">
+                        <div class="placeholder-inner">
+                            <span class="placeholder-icon">🎬</span>
+                            <span class="placeholder-text">Video / GIF demo coming soon</span>
+                        </div>
+                    </div>
+                    <div class="media-placeholder">
+                        <div class="placeholder-inner">
+                            <span class="placeholder-icon">📷</span>
+                            <span class="placeholder-text">Screenshot coming soon</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pipeline Architecture -->
+        <section class="project-section">
+            <div class="container">
+                <h2 class="section-heading">Pipeline Architecture</h2>
+                <div class="architecture-flow">
+                    <div class="flow-step">
+                        <div class="flow-number">1</div>
+                        <h3>Vehicle Detection</h3>
+                        <p>Real-time object detection with optimized models for edge deployment. Handles varying lighting, occlusion, and camera angles.</p>
+                    </div>
+                    <div class="flow-connector">→</div>
+                    <div class="flow-step">
+                        <div class="flow-number">2</div>
+                        <h3>Multi-Object Tracking</h3>
+                        <p>Persistent identity tracking across video frames with robust association algorithms for handling occlusion and re-entry.</p>
+                    </div>
+                    <div class="flow-connector">→</div>
+                    <div class="flow-step">
+                        <div class="flow-number">3</div>
+                        <h3>License Plate OCR</h3>
+                        <p>Plate detection and character recognition supporting multiple plate formats with high accuracy under challenging conditions.</p>
+                    </div>
+                    <div class="flow-connector">→</div>
+                    <div class="flow-step">
+                        <div class="flow-number">4</div>
+                        <h3>Vehicle Re-ID</h3>
+                        <p>Cross-camera vehicle re-identification using learned feature embeddings for matching vehicles across different viewpoints.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Highlights -->
+        <section class="project-section alt-bg">
+            <div class="container">
+                <h2 class="section-heading">Technical Highlights</h2>
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <h3>Scale</h3>
+                        <p>Deployed and running across 1100+ sites with real-time processing requirements.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>Edge Optimized</h3>
+                        <p>Models optimized for edge devices with TensorRT acceleration, meeting strict latency constraints.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>Robust Tracking</h3>
+                        <p>Multi-object tracking handles occlusion, re-entry, and crowded scenes with consistent identity maintenance.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>End-to-End</h3>
+                        <p>Unified pipeline from raw video input to structured analytics output, with each module feeding the next.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack -->
+        <section class="project-section">
+            <div class="container">
+                <h2 class="section-heading">Tech Stack</h2>
+                <div class="tech-stack-list">
+                    <span class="tech-item">Python</span>
+                    <span class="tech-item">PyTorch</span>
+                    <span class="tech-item">TensorRT</span>
+                    <span class="tech-item">ONNX</span>
+                    <span class="tech-item">OpenCV</span>
+                    <span class="tech-item">CUDA</span>
+                    <span class="tech-item">Docker</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-copyright">
+                    <p>&copy; 2026 Shuai Yan. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="3D Digital Twin Pipeline - SfM, 3D Gaussian Splatting, and Unreal Engine for photorealistic reconstruction">
+    <title>3D Digital Twin Pipeline | Shuai Yan</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../project-detail.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">Shuai Yan</a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">← Back</a></li>
+                <li><a href="../index.html#projects" class="nav-link">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="project-detail">
+        <!-- Project Hero -->
+        <section class="project-hero">
+            <div class="container">
+                <h1 class="project-detail-title">3D Digital Twin Pipeline</h1>
+                <div class="project-detail-tags">
+                    <span class="tag">Structure from Motion</span>
+                    <span class="tag">3D Gaussian Splatting</span>
+                    <span class="tag">Unreal Engine</span>
+                    <span class="tag">Synthetic Data</span>
+                    <span class="tag">3D Reconstruction</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reconstruction Results -->
+        <section class="project-section">
+            <div class="container">
+                <h2 class="section-heading">Reconstruction Results</h2>
+
+                <h3 class="demo-sub-heading">Individual Group Reconstructions</h3>
+                <div class="demo-video-grid">
+                    <div class="demo-video-item">
+                        <video autoplay muted loop playsinline>
+                            <source src="../assets/digital_twin/reconstruction_videos/group_000_orbit.mp4" type="video/mp4">
+                        </video>
+                        <span class="demo-video-label">Group 0</span>
+                    </div>
+                    <div class="demo-video-item">
+                        <video autoplay muted loop playsinline>
+                            <source src="../assets/digital_twin/reconstruction_videos/group_001_orbit.mp4" type="video/mp4">
+                        </video>
+                        <span class="demo-video-label">Group 1</span>
+                    </div>
+                    <div class="demo-video-item">
+                        <video autoplay muted loop playsinline>
+                            <source src="../assets/digital_twin/reconstruction_videos/group_002_orbit.mp4" type="video/mp4">
+                        </video>
+                        <span class="demo-video-label">Group 2</span>
+                    </div>
+                    <div class="demo-video-item">
+                        <video autoplay muted loop playsinline>
+                            <source src="../assets/digital_twin/reconstruction_videos/group_003_orbit.mp4" type="video/mp4">
+                        </video>
+                        <span class="demo-video-label">Group 3</span>
+                    </div>
+                    <div class="demo-video-item">
+                        <video autoplay muted loop playsinline>
+                            <source src="../assets/digital_twin/reconstruction_videos/group_004_orbit.mp4" type="video/mp4">
+                        </video>
+                        <span class="demo-video-label">Group 4</span>
+                    </div>
+                    <div class="demo-video-item">
+                        <video autoplay muted loop playsinline>
+                            <source src="../assets/digital_twin/reconstruction_videos/group_005_orbit.mp4" type="video/mp4">
+                        </video>
+                        <span class="demo-video-label">Group 5</span>
+                    </div>
+                    <div class="demo-video-item">
+                        <video autoplay muted loop playsinline>
+                            <source src="../assets/digital_twin/reconstruction_videos/group_006_orbit.mp4" type="video/mp4">
+                        </video>
+                        <span class="demo-video-label">Group 6</span>
+                    </div>
+                    <div class="demo-video-item">
+                        <video autoplay muted loop playsinline>
+                            <source src="../assets/digital_twin/reconstruction_videos/group_007_orbit.mp4" type="video/mp4">
+                        </video>
+                        <span class="demo-video-label">Group 7</span>
+                    </div>
+                </div>
+
+                <!-- Step 2: Merged reconstruction -->
+                <div class="demo-merge-arrow">
+                    <span>Merge Algorithm</span>
+                    <div class="merge-arrow-line"></div>
+                </div>
+
+                <div class="demo-main-video">
+                    <h3>Merged Scene</h3>
+                    <video autoplay muted loop playsinline>
+                        <source src="../assets/digital_twin/reconstruction_videos/merged_orbit.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pipeline Architecture -->
+        <section class="project-section">
+            <div class="container">
+                <h2 class="section-heading">Pipeline Architecture</h2>
+                <div class="architecture-flow">
+                    <div class="flow-step">
+                        <div class="flow-number">1</div>
+                        <h3>Image Capture</h3>
+                        <p>Structured image collection from multiple viewpoints to ensure complete scene coverage and sufficient overlap for reconstruction.</p>
+                    </div>
+                    <div class="flow-connector">→</div>
+                    <div class="flow-step">
+                        <div class="flow-number">2</div>
+                        <h3>SfM Reconstruction</h3>
+                        <p>Structure from Motion to recover camera poses and sparse 3D point cloud. Feature matching, pose estimation, and bundle adjustment.</p>
+                    </div>
+                    <div class="flow-connector">→</div>
+                    <div class="flow-step">
+                        <div class="flow-number">3</div>
+                        <h3>3D Gaussian Splatting</h3>
+                        <p>Dense photorealistic reconstruction using 3D Gaussian primitives. Real-time rendering quality with explicit 3D representation.</p>
+                    </div>
+                    <div class="flow-connector">→</div>
+                    <div class="flow-step">
+                        <div class="flow-number">4</div>
+                        <h3>Unreal Engine Integration</h3>
+                        <p>Import into Unreal Engine for interactive visualization, virtual camera placement, and photorealistic synthetic data rendering.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Highlights -->
+        <section class="project-section alt-bg">
+            <div class="container">
+                <h2 class="section-heading">Technical Highlights</h2>
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <h3>Photorealistic Quality</h3>
+                        <p>3D Gaussian Splatting produces near-photorealistic novel view synthesis, enabling convincing digital twin visualization.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>Synthetic Data</h3>
+                        <p>Generate unlimited training data with precise ground-truth labels, reducing dependency on manual annotation.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>Real-Time Rendering</h3>
+                        <p>Gaussian Splatting enables real-time rendering at high resolution, making interactive exploration practical.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>End-to-End Pipeline</h3>
+                        <p>From raw images to interactive 3D environment — fully automated pipeline with minimal manual intervention.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack -->
+        <section class="project-section">
+            <div class="container">
+                <h2 class="section-heading">Tech Stack</h2>
+                <div class="tech-stack-list">
+                    <span class="tech-item">Python</span>
+                    <span class="tech-item">PyTorch</span>
+                    <span class="tech-item">CUDA</span>
+                    <span class="tech-item">COLMAP</span>
+                    <span class="tech-item">3D Gaussian Splatting</span>
+                    <span class="tech-item">Unreal Engine</span>
+                    <span class="tech-item">C++</span>
+                    <span class="tech-item">OpenCV</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-copyright">
+                    <p>&copy; 2026 Shuai Yan. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
