@@ -331,6 +331,47 @@
 }
 
 /* ========================================
+   Pipeline Steps (Vehicle Perception)
+   ======================================== */
+.pipeline-step {
+    margin-bottom: var(--spacing-sm);
+}
+
+.pipeline-step-title {
+    font-size: var(--font-size-lg);
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-sm);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.pipeline-number {
+    width: 32px;
+    height: 32px;
+    background-color: var(--accent-primary);
+    color: var(--bg-primary);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: var(--font-size-sm);
+    flex-shrink: 0;
+}
+
+.pipeline-image-wrapper {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+.pipeline-image-wrapper img {
+    width: 100%;
+    display: block;
+}
+
+/* ========================================
    Responsive - Tablet
    ======================================== */
 @media (max-width: 768px) {
