@@ -1,0 +1,15 @@
+# Logs
+*.log
+
+# my-claude-coding-agent skill scaffolding
+claude-progress.txt
+feature_list.json
+init.sh
+
+# Claude Code project config
+.claude/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+nul
